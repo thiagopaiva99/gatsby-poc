@@ -2,9 +2,10 @@ import React from 'react'
 import Link from 'gatsby-link'
 
 const getPages = () => [
-    { title: 'Home', link: '/' },
-    { title: 'About', link: '/about' },
-    { title: 'Contact', link: '/contact' },
+    { id: 0, title: 'Home', link: '/' },
+    { id: 1, title: 'About', link: '/about' },
+    { id: 2, title: 'Contact', link: '/contact' },
+    { id: 3, title: 'Counter', link: '/counter' }
 ]
 
 const listStyle = {
@@ -18,9 +19,11 @@ const listStyle = {
 const HeaderLinks = () => (
     <ul style={listStyle}>
         {getPages().map(page => (
-            <Link to={page.link}>
-                {page.title}
-            </Link>
+            <li key={page.id}>
+                <Link to={page.link}>
+                    {page.title}
+                </Link>
+            </li>
         ))}
     </ul>
 )
