@@ -1,10 +1,8 @@
-import React from 'react'
-import Classes from '../../styles'
+import React from 'react';
+import Classes from '../../styles';
 
-import injectSheet from 'react-jss'
+import injectSheet from 'react-jss';
 
-const Divider = ({ classes }) => (
-    <div className={classes.divider}></div>
-)
+const Divider = ({ classes }) => <div className={classes.divider} />;
 
-export default injectSheet(Classes)(Divider)
+export default injectSheet(Classes)(Divider);

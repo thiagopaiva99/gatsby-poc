@@ -1,11 +1,11 @@
-import React from 'react'
+import React from 'react';
 
-import Counter from '../components/counter'
+import Counter from '../components/counter';
 
 const Tests = () => (
-    <div>
-        <Counter />
-    </div>
-)
+  <div>
+    <Counter />
+  </div>
+);
 
-export default Tests
+export default Tests;
