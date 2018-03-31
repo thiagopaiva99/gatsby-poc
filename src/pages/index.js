@@ -1,13 +1,13 @@
 import React from 'react'
 import Link from 'gatsby-link'
+import injectSheet from 'react-jss'
 
-const IndexPage = () => (
+import Classes from '../styles'
+
+const IndexPage = ({ classes }) => (
   <div>
-    <h1>Hi people</h1>
-    <p>Welcome to your new Gatsby site.</p>
-    <p>Now go build something great.</p>
-    <Link to="/page-2/">Go to page 2</Link>
+    <h1 className={classes.h1Header}>Index</h1>
   </div>
 )
 
-export default IndexPage
+export default injectSheet(Classes)(IndexPage)

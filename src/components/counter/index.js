@@ -1,5 +1,7 @@
 import React from 'react'
 
+import Divider from '../divider'
+
 class Counter extends React.Component {
     constructor() {
         super()
@@ -28,6 +30,8 @@ class Counter extends React.Component {
                 <button onClick={() => this.upCount() }>+</button>
                 <span>{ this.getCount() }</span>
                 <button onClick={() => this.downCount() }>-</button>
+
+                <Divider />
             </div>
         )
     }

@@ -1,3 +1,3 @@
 export default {
-    applicationTitle: 'Thiago Galvani Blog'
+    applicationTitle: 'Thiago Galvani Gatsby POC'
 }
